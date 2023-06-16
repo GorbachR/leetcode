@@ -13,7 +13,7 @@ func TestMaxDepth(t *testing.T) {
 	result1, expected1 := maxDepth(root1), 3
 
 	if result1 != expected1 {
-		t.Errorf("Expected %v but got %v", expected1, result1)
+		t.Errorf("Test 1 failed, expected %v but got %v", expected1, result1)
 	}
 
 	bin2 := []int{1, math.MinInt, 2}
@@ -22,7 +22,7 @@ func TestMaxDepth(t *testing.T) {
 	result2, expected2 := maxDepth(root2), 2
 
 	if result2 != expected2 {
-		t.Errorf("Expected %v but got %v", expected2, result2)
+		t.Errorf("Test 2 failed, expected %v but got %v", expected2, result2)
 	}
 }
 

@@ -8,7 +8,7 @@ func TestCanConstruct(t *testing.T) {
 	result1, expected1 := canConstruct(ransomNote1, magazine1), false
 
 	if result1 != expected1 {
-		t.Errorf("Expected %t but got %t", expected1, result1)
+		t.Errorf("Test 1 failed, expected %t but got %t", expected1, result1)
 	}
 
 	ransomNote2, magazine2 := "aa", "ab"
@@ -16,7 +16,7 @@ func TestCanConstruct(t *testing.T) {
 	result2, expected2 := canConstruct(ransomNote2, magazine2), false
 
 	if result2 != expected2 {
-		t.Errorf("Expected %t but got %t", expected2, result2)
+		t.Errorf("Test 2 failed, expected %t but got %t", expected2, result2)
 	}
 
 	ransomNote3, magazine3 := "aa", "aab"
@@ -24,6 +24,6 @@ func TestCanConstruct(t *testing.T) {
 	result3, expected3 := canConstruct(ransomNote3, magazine3), true
 
 	if result3 != expected3 {
-		t.Errorf("Expected %t but got %t", expected3, result3)
+		t.Errorf("Test 3 failed, expected %t but got %t", expected3, result3)
 	}
 }
