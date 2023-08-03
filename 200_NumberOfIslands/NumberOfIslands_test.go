@@ -2,7 +2,7 @@ package NumberOfIslands
 
 import "testing"
 
-func TestCanConstruct(t *testing.T) {
+func TestNumsIslands(t *testing.T) {
 	grid1 := [][]byte{
 		{'1', '1', '1', '1', '0'},
 		{'1', '1', '0', '1', '0'},
