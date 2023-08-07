@@ -9,13 +9,9 @@ func canJump(nums []int) bool {
 		}
 
 		maxJump = max(maxJump, i+nums[i])
-
-		if maxJump >= len(nums)-1 {
-			return true
-		}
 	}
 
-	return false
+	return true
 }
 
 func max(a, b int) int {
